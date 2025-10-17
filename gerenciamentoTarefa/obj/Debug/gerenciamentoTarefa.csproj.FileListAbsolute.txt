@@ -1,0 +1,13 @@
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.csproj.AssemblyReference.cache
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.AtualizarTarefa.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.AtualizarUsuario.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.CadastrarTarefa.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.CadastroUsuario.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.ConsultarTarefa.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.ExcluirTarefa.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.ExcluirUsuario.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.MenuUsuario.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.Properties.Resources.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.MenuGerenciamento.resources
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.csproj.GenerateResource.cache
+C:\Users\pedro.hsoliveira60\source\repos\GerenciamentoDeTarefas\gerenciamentoTarefa\obj\Debug\gerenciamentoTarefa.csproj.CoreCompileInputs.cache
