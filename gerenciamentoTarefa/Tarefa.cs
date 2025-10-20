@@ -102,6 +102,5 @@ namespace gerenciamentoTarefa
                    "\nCategoria: " + ModificarCodigoUsuario;
         }//fim do imprimir
 
-
     }//fim da classe
 }//fim do projeto

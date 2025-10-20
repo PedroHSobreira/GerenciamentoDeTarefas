@@ -70,6 +70,7 @@
             this.label6.Size = new System.Drawing.Size(49, 22);
             this.label6.TabIndex = 49;
             this.label6.Text = "Código:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button1
             // 
@@ -95,6 +96,7 @@
             this.label2.Size = new System.Drawing.Size(170, 36);
             this.label2.TabIndex = 47;
             this.label2.Text = "Informe o codigo: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -107,6 +109,7 @@
             this.label1.Size = new System.Drawing.Size(261, 54);
             this.label1.TabIndex = 46;
             this.label1.Text = "Consulte a Tarefa";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 

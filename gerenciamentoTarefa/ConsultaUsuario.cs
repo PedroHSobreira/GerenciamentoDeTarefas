@@ -30,7 +30,7 @@ namespace gerenciamentoTarefa
         {
             for (int i = 0; i < dao.QuantidadeDeDados(); i++)
             {
-                dataGridView1.Rows.Add(dao.codigo[i], dao.email[i], dao.senha[i]);
+                dataGridView1.Rows.Add(dao.codigo[i], dao.nome[i], dao.email[i], dao.senha[i]);
             }
         }//fim do metodo
 
@@ -40,14 +40,16 @@ namespace gerenciamentoTarefa
             dataGridView1.AllowUserToDeleteRows = false;//Apagar Linhas
             dataGridView1.AllowUserToResizeColumns = false;//Modificar Colunas
             dataGridView1.AllowUserToResizeRows = false;//Modificar Linhas
-            dataGridView1.ColumnCount = 3;
+            dataGridView1.ColumnCount = 4;
         }//fim do configurarGrid
 
         public void NomeDados()
         {
             dataGridView1.Columns[0].Name = "Código";
+            dataGridView1.Columns[0].Name = "Nome";
             dataGridView1.Columns[0].Name = "Email";
             dataGridView1.Columns[0].Name = "Senha";
+        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -62,6 +64,26 @@ namespace gerenciamentoTarefa
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }//fim do class
 }//fim do projeto

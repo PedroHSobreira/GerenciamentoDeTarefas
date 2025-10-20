@@ -81,6 +81,7 @@
             this.label3.Size = new System.Drawing.Size(49, 22);
             this.label3.TabIndex = 20;
             this.label3.Text = "Código:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -93,6 +94,7 @@
             this.label2.Size = new System.Drawing.Size(244, 36);
             this.label2.TabIndex = 21;
             this.label2.Text = "Preencha o campo abaixo: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -105,6 +107,7 @@
             this.label1.Size = new System.Drawing.Size(212, 54);
             this.label1.TabIndex = 19;
             this.label1.Text = "Excluir Tarefa";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DeletarTarefa
             // 

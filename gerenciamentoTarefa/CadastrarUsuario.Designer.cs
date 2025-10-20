@@ -101,6 +101,7 @@
             this.label5.Size = new System.Drawing.Size(45, 22);
             this.label5.TabIndex = 8;
             this.label5.Text = "Senha:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -113,6 +114,7 @@
             this.label4.Size = new System.Drawing.Size(47, 22);
             this.label4.TabIndex = 9;
             this.label4.Text = "E-Mail:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -125,6 +127,7 @@
             this.label3.Size = new System.Drawing.Size(44, 22);
             this.label3.TabIndex = 10;
             this.label3.Text = "Nome:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -137,6 +140,7 @@
             this.label2.Size = new System.Drawing.Size(262, 36);
             this.label2.TabIndex = 11;
             this.label2.Text = "Preencha os campos abaixo: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -149,6 +153,7 @@
             this.label1.Size = new System.Drawing.Size(298, 54);
             this.label1.TabIndex = 7;
             this.label1.Text = "Cadastro de Usuário";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // CadastrarUsuario
             // 
@@ -168,6 +173,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CadastrarUsuario";
             this.Text = "CadastrarUsuario";
+            this.Load += new System.EventHandler(this.CadastrarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -24,12 +24,14 @@ namespace gerenciamentoTarefa
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MenuUsuario menuUsuario = new MenuUsuario();
+            menuUsuario.ShowDialog();
         }//fim usuario
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            MenuTarefa menuTarefa = new MenuTarefa();
+            menuTarefa.ShowDialog();
         }//fim tarefa
     }//fim da classe
 }//fim do projeto

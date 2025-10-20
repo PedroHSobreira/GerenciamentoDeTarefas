@@ -126,6 +126,7 @@
             this.label6.Size = new System.Drawing.Size(49, 22);
             this.label6.TabIndex = 32;
             this.label6.Text = "Código:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label4
             // 
@@ -138,6 +139,7 @@
             this.label4.Size = new System.Drawing.Size(47, 22);
             this.label4.TabIndex = 33;
             this.label4.Text = "E-Mail:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label7
             // 
@@ -150,6 +152,7 @@
             this.label7.Size = new System.Drawing.Size(44, 22);
             this.label7.TabIndex = 34;
             this.label7.Text = "Nome:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label5
             // 
@@ -162,6 +165,7 @@
             this.label5.Size = new System.Drawing.Size(45, 22);
             this.label5.TabIndex = 31;
             this.label5.Text = "Senha:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
@@ -174,6 +178,7 @@
             this.label3.Size = new System.Drawing.Size(262, 36);
             this.label3.TabIndex = 35;
             this.label3.Text = "Preencha os campos abaixo: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -186,6 +191,7 @@
             this.label2.Size = new System.Drawing.Size(231, 36);
             this.label2.TabIndex = 36;
             this.label2.Text = "Informe o código abaixo: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -198,6 +204,7 @@
             this.label1.Size = new System.Drawing.Size(260, 54);
             this.label1.TabIndex = 30;
             this.label1.Text = "Atualizar Usuário";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // AtualizaUsuario
             // 

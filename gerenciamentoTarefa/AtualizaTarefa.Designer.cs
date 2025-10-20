@@ -110,6 +110,7 @@
             this.label8.Size = new System.Drawing.Size(58, 22);
             this.label8.TabIndex = 63;
             this.label8.Text = "Situação:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label5
             // 
@@ -122,6 +123,7 @@
             this.label5.Size = new System.Drawing.Size(64, 22);
             this.label5.TabIndex = 64;
             this.label5.Text = "Lembrete:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -134,6 +136,7 @@
             this.label4.Size = new System.Drawing.Size(42, 22);
             this.label4.TabIndex = 65;
             this.label4.Text = "Prazo:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label7
             // 
@@ -146,6 +149,7 @@
             this.label7.Size = new System.Drawing.Size(45, 22);
             this.label7.TabIndex = 66;
             this.label7.Text = "Título:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label9
             // 
@@ -158,6 +162,7 @@
             this.label9.Size = new System.Drawing.Size(63, 22);
             this.label9.TabIndex = 67;
             this.label9.Text = "Descrição:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -170,6 +175,7 @@
             this.label10.Size = new System.Drawing.Size(68, 22);
             this.label10.TabIndex = 68;
             this.label10.Text = "Prioridade:";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // button2
             // 
@@ -229,6 +235,7 @@
             this.label6.Size = new System.Drawing.Size(49, 22);
             this.label6.TabIndex = 56;
             this.label6.Text = "Código:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label3
             // 
@@ -241,6 +248,7 @@
             this.label3.Size = new System.Drawing.Size(262, 36);
             this.label3.TabIndex = 57;
             this.label3.Text = "Preencha os campos abaixo: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -253,6 +261,7 @@
             this.label2.Size = new System.Drawing.Size(231, 36);
             this.label2.TabIndex = 58;
             this.label2.Text = "Informe o código abaixo: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -265,6 +274,7 @@
             this.label1.Size = new System.Drawing.Size(243, 54);
             this.label1.TabIndex = 55;
             this.label1.Text = "Atualizar Tarefa";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // AtualizaTarefa
             // 

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6D03941E-78CD-4400-8595-55C5E1272EFA}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>gerenciamentoTarefa</RootNamespace>
     <AssemblyName>gerenciamentoTarefa</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -29,9 +29,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.4.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,47 +54,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AtualizarTarefa.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="AtualizaTarefa.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AtualizarTarefa.Designer.cs">
-      <DependentUpon>AtualizarTarefa.cs</DependentUpon>
+    <Compile Include="AtualizaTarefa.Designer.cs">
+      <DependentUpon>AtualizaTarefa.cs</DependentUpon>
     </Compile>
-    <Compile Include="AtualizarUsuario.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="AtualizaUsuario.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AtualizarUsuario.Designer.cs">
-      <DependentUpon>AtualizarUsuario.cs</DependentUpon>
+    <Compile Include="AtualizaUsuario.Designer.cs">
+      <DependentUpon>AtualizaUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastrarTarefa.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="CadastrarUsuario.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastrarTarefa.Designer.cs">
-      <DependentUpon>CadastrarTarefa.cs</DependentUpon>
+    <Compile Include="CadastrarUsuario.Designer.cs">
+      <DependentUpon>CadastrarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroUsuario.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="CadastroTarefa.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroUsuario.Designer.cs">
-      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    <Compile Include="CadastroTarefa.Designer.cs">
+      <DependentUpon>CadastroTarefa.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultarTarefa.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ConsultaTarefa.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarTarefa.Designer.cs">
-      <DependentUpon>ConsultarTarefa.cs</DependentUpon>
+    <Compile Include="ConsultaTarefa.Designer.cs">
+      <DependentUpon>ConsultaTarefa.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExcluirTarefa.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ConsultaUsuario.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExcluirTarefa.Designer.cs">
-      <DependentUpon>ExcluirTarefa.cs</DependentUpon>
+    <Compile Include="ConsultaUsuario.Designer.cs">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExcluirUsuario.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ControlTarefa.cs" />
+    <Compile Include="ControlUsuario.cs" />
+    <Compile Include="DAOTarefa.cs" />
+    <Compile Include="DAOUsuario.cs" />
+    <Compile Include="DeletarTarefa.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExcluirUsuario.Designer.cs">
-      <DependentUpon>ExcluirUsuario.cs</DependentUpon>
+    <Compile Include="DeletarTarefa.Designer.cs">
+      <DependentUpon>DeletarTarefa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletarUsuario.Designer.cs">
+      <DependentUpon>DeletarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGerenciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGerenciar.Designer.cs">
+      <DependentUpon>MenuGerenciar.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuUsuario.cs">
       <SubType>UserControl</SubType>
@@ -95,36 +123,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="MenuGerenciamento.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MenuGerenciamento.Designer.cs">
-      <DependentUpon>MenuGerenciamento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AtualizarTarefa.resx">
-      <DependentUpon>AtualizarTarefa.cs</DependentUpon>
+    <EmbeddedResource Include="AtualizaTarefa.resx">
+      <DependentUpon>AtualizaTarefa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AtualizarUsuario.resx">
-      <DependentUpon>AtualizarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="AtualizaUsuario.resx">
+      <DependentUpon>AtualizaUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastrarTarefa.resx">
-      <DependentUpon>CadastrarTarefa.cs</DependentUpon>
+    <EmbeddedResource Include="CadastrarUsuario.resx">
+      <DependentUpon>CadastrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroUsuario.resx">
-      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="CadastroTarefa.resx">
+      <DependentUpon>CadastroTarefa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConsultarTarefa.resx">
-      <DependentUpon>ConsultarTarefa.cs</DependentUpon>
+    <EmbeddedResource Include="ConsultaTarefa.resx">
+      <DependentUpon>ConsultaTarefa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExcluirTarefa.resx">
-      <DependentUpon>ExcluirTarefa.cs</DependentUpon>
+    <EmbeddedResource Include="ConsultaUsuario.resx">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExcluirUsuario.resx">
-      <DependentUpon>ExcluirUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="DeletarTarefa.resx">
+      <DependentUpon>DeletarTarefa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletarUsuario.resx">
+      <DependentUpon>DeletarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGerenciar.resx">
+      <DependentUpon>MenuGerenciar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUsuario.resx">
       <DependentUpon>MenuUsuario.cs</DependentUpon>
@@ -133,9 +161,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuGerenciamento.resx">
-      <DependentUpon>MenuGerenciamento.cs</DependentUpon>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
